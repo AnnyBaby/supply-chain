@@ -1,0 +1,10 @@
+{
+  "end": "admin",
+  "theme": "arco",
+  "frameworkId": "admin",
+  "templateId": "admin",
+  "templateVersion": "1.1.0",
+  "scaffoldMode": "lean",
+  "outputDir": "admin",
+  "createdAt": "2026-08-31"
+}

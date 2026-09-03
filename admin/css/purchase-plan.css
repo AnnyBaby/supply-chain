@@ -1,0 +1,404 @@
+.purchase-page {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.purchase-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+  border-radius: 8px;
+  background: var(--color-bg-2);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.purchase-page-title {
+  color: var(--color-text-1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.purchase-page-desc {
+  margin-top: 6px;
+  max-width: 820px;
+  color: var(--color-text-3);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.purchase-page > .arco-card.general-card > .arco-card-body {
+  padding: 16px;
+}
+
+.purchase-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.purchase-kpi-card {
+  min-height: 92px;
+  border: 1px solid var(--color-border-2);
+  border-radius: 6px;
+  background: var(--color-bg-2);
+  padding: 16px;
+}
+
+.purchase-kpi-label {
+  color: var(--color-text-3);
+  font-size: 13px;
+}
+
+.purchase-kpi-value {
+  margin-top: 8px;
+  color: var(--color-text-1);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.purchase-kpi-sub {
+  margin-top: 6px;
+  color: var(--color-text-3);
+  font-size: 12px;
+}
+
+.purchase-section-title {
+  margin-bottom: 14px;
+  color: var(--color-text-1);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.purchase-muted {
+  color: var(--color-text-3);
+}
+
+.purchase-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.purchase-tabs {
+  margin-bottom: 16px;
+}
+
+.purchase-filter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.purchase-filter-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.purchase-filter-line .purchase-tabs {
+  margin-bottom: 0;
+}
+
+.purchase-filter-label {
+  flex: 0 0 72px;
+  color: var(--color-text-2);
+  font-size: 14px;
+}
+
+.purchase-link {
+  color: rgb(var(--primary-6));
+  cursor: pointer;
+}
+
+.purchase-link:hover {
+  color: rgb(var(--primary-5));
+}
+
+.purchase-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.inventory-card {
+  border: 1px solid var(--color-border-2);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.inventory-label {
+  color: var(--color-text-3);
+  font-size: 12px;
+}
+
+.inventory-value {
+  margin-top: 6px;
+  color: var(--color-text-1);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.plan-step-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.plan-side {
+  position: sticky;
+  top: 76px;
+  align-self: start;
+}
+
+.plan-main {
+  min-width: 0;
+}
+
+.merge-panel {
+  border: 1px solid var(--color-border-2);
+  border-radius: 6px;
+  background: var(--color-fill-1);
+  padding: 12px;
+}
+
+.department-split {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.department-split-item {
+  border: 1px solid var(--color-border-2);
+  border-radius: 6px;
+  background: var(--color-bg-2);
+  padding: 10px 12px;
+}
+
+.department-name {
+  color: var(--color-text-2);
+  font-size: 12px;
+}
+
+.department-qty {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.assignment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, calc(100% - 376px)) 360px;
+  gap: 16px;
+  align-items: start;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.assignment-main-card,
+.buyer-board {
+  min-width: 0;
+}
+
+.assignment-main-card {
+  overflow: hidden;
+}
+
+.assignment-main-card .arco-table {
+  max-width: 100%;
+}
+
+.buyer-board {
+  position: sticky;
+  top: 76px;
+}
+
+.buyer-board-desc {
+  margin-bottom: 12px;
+  color: var(--color-text-3);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.buyer-card {
+  padding: 12px;
+  border: 1px solid var(--color-border-2);
+  border-radius: 8px;
+  background: var(--color-bg-2);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.buyer-card + .buyer-card {
+  margin-top: 10px;
+}
+
+.buyer-card:hover,
+.buyer-card.active {
+  border-color: rgb(var(--primary-6));
+  box-shadow: 0 8px 20px rgba(22, 93, 255, 0.08);
+}
+
+.buyer-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buyer-name {
+  color: var(--color-text-1);
+  font-weight: 600;
+}
+
+.buyer-code,
+.buyer-meta,
+.purchase-muted {
+  color: var(--color-text-3);
+  font-size: 12px;
+}
+
+.buyer-left-status {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: rgb(var(--red-1));
+  color: rgb(var(--red-6));
+  font-size: 13px;
+}
+
+.buyer-tags {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0 8px;
+  flex-wrap: wrap;
+}
+
+.buyer-load {
+  display: grid;
+  grid-template-columns: 80px 1fr 42px;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--color-text-2);
+  font-size: 12px;
+}
+
+.buyer-load-bar {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--color-fill-3);
+}
+
+.buyer-load-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgb(var(--primary-5)), rgb(var(--orange-5)));
+}
+
+.buyer-counts {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  color: var(--color-text-2);
+  font-size: 12px;
+}
+
+.buyer-detail {
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--color-fill-1);
+  color: var(--color-text-2);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.buyer-detail-title {
+  margin-bottom: 6px;
+  color: var(--color-text-1);
+  font-weight: 600;
+}
+
+.purchase-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.purchase-impact-item {
+  padding: 12px;
+  border: 1px solid var(--color-border-2);
+  border-radius: 8px;
+  background: var(--color-fill-1);
+}
+
+.purchase-impact-title {
+  margin-bottom: 6px;
+  color: var(--color-text-1);
+  font-weight: 600;
+}
+
+.purchase-impact-desc {
+  color: var(--color-text-3);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+  .purchase-kpi-grid,
+  .department-split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .purchase-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-step-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-side {
+    position: static;
+  }
+
+  .buyer-board {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .purchase-kpi-grid,
+  .inventory-grid,
+  .department-split {
+    grid-template-columns: 1fr;
+  }
+
+  .purchase-toolbar,
+  .purchase-table-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
