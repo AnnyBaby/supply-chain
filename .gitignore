@@ -1,0 +1,7 @@
+.agents/
+.tools/
+frame/
+dify-business-bid-word/
+dist/
+__pycache__/
+*.pyc
