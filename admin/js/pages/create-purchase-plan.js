@@ -258,7 +258,7 @@
             <a-card class="general-card pro-page-card">
               <div class="purchase-section-title">创建步骤</div>
               <a-steps direction="vertical" :current="1">
-                <a-step title="选择需求" description="来自集团需求池" />
+                <a-step title="选择需求" description="来自需求池(计划员视角)" />
                 <a-step title="制定计划" description="填写计划信息并确认明细" />
                 <a-step title="提交处理" :description="isUrgentPlan ? '紧急计划免审批' : '普通计划提交审批'" />
               </a-steps>

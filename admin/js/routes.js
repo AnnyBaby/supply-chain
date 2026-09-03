@@ -67,7 +67,7 @@ window.ArcoProRoutes = [
     name: '需求管理',
     key: 'demand-management',
     children: [
-      { name: '需求明细', key: 'demand-management/detail' },
+      { name: '需求池(分厂文员视角)', key: 'demand-management/detail' },
       { name: '我的需求申请', key: 'demand-management/my-requests' },
       { name: '需求审批管理', key: 'demand-management/approval' },
       { name: '需求详情页', key: 'demand-management/request-detail' },
@@ -77,7 +77,7 @@ window.ArcoProRoutes = [
     name: '采购计划管理',
     key: 'purchase-plan',
     children: [
-      { name: '集团需求池', key: 'purchase-plan/group-demand-pool' },
+      { name: '需求池(计划员视角)', key: 'purchase-plan/group-demand-pool' },
       { name: '采购计划列表', key: 'purchase-plan/list' },
       { name: '创建采购计划', key: 'purchase-plan/create' },
       { name: '采购任务分配', key: 'purchase-plan/task-assignment' },

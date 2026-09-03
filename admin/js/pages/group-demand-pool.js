@@ -424,7 +424,6 @@
             </div>
             <a-space>
               <a-button @click="currentPlanStatus = '全部'">全部状态</a-button>
-              <a-button status="success" @click="openMergeConfirm">查看合并候选</a-button>
               <a-button type="primary" :disabled="hasMixedSelectedTypes" @click="goCreatePlan()"><template #icon><icon-plus /></template>批量生成采购计划</a-button>
             </a-space>
           </div>
@@ -511,7 +510,6 @@
 
           <div class="purchase-table-footer">
             <a-space>
-              <a-button status="success" @click="openMergeConfirm">确认同物料合并</a-button>
               <a-button :disabled="!selectedKeys.length || hasMixedSelectedTypes" @click="goCreatePlan()">已选 {{ selectedKeys.length }} 条，生成计划</a-button>
               <span class="purchase-muted">已计划需求不可重复纳入采购计划</span>
             </a-space>
@@ -612,7 +610,7 @@
 
   mountProPage({
     pageKey: 'purchase-plan/group-demand-pool',
-    title: '集团需求池',
+    title: '需求池(计划员视角)',
     pageComponent: GroupDemandPoolPage,
   })
 })()
